@@ -69,10 +69,11 @@ document.querySelector(".search-button").addEventListener("click", () => {
                                 console.log(repores)
                                 repores.forEach((repo) => {
                                     let repoDiv = document.createElement("div")
+                                    let descr=repo.description?repo.description:"No description available"
                                     repoDiv.innerHTML =
-                                        `    <a class="repo-box" href="https://${res.login}.github.io/${repo.name}" target="_blank">
+                                        `    <a class="repo-box" href="https://github.com/${res.login}/${repo.name}" target="_blank">
                                              <h3 style="text-decoration: underline;">${repo.name}</h3>
-                                             <h5>${repo.description}</h5>
+                                             <h5>${descr}</h5>
                                             </a>
                                          `
                                     activePageContainer.append(repoDiv)
