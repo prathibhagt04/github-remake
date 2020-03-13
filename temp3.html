@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gitDiv {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            height: fit-content;
+            width: 800px;
+        }
+
+        .gitDiv>p.even {
+            font-size: 15px;
+            background-color: #EAE6EC;
+            border-radius: 8px;
+            border: solid #DCC7BF 2px;
+            padding: 7px;
+            width: 550px;
+            line-height: 20px;
+        }
+
+        .gitDiv>h4.even {
+            padding: 7px;
+            border-radius: 8px;
+            border: solid #89909F 2px;
+            background-color: #C4E4E5;
+            width: 550px;
+        }
+
+        .gitDiv>p.odd {
+            font-size: 15px;
+            background-color: #EAE6EC;
+            border-radius: 8px;
+            border: solid #DCC7BF 2px;
+            padding: 7px;
+            margin-left: 150px;
+            width: 550px;
+            line-height: 20px;
+
+        }
+
+        .gitDiv>h4.odd {
+            padding: 7px;
+            border-radius: 8px;
+            border: solid #89909F 2px;
+            background-color: #C4E4E5;
+            margin-left: 150px;
+            width: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gitDiv">
+        <h4 class="even">What is Git ?</h4>
+        <p class="even">Git is a distributed version-control system for tracking changes in source code during software
+            development. It is designed for coordinating work among programmers, but it can be used to track changes in
+            any set of files</p>
+        <h4 class="odd">Difference between Git and github ?</h4>
+        <p class="odd">Git is a revision control system, a tool to manage your source code history <br>
+            GitHub is a hosting service for Git repositories</p>
+            <h4 class="even">How to track your files and commit ?</h4>
+            <p class="even">
+               <b>git status </b> command will show you all the untracked files <br>
+               <b>git add (filename..) </b> command will select the files you want to keep changes for <br>
+               <b>git commit -m "message" </b> command will commit the changes done <br>
+            </p>
+            <h4 class="odd">What are Git branches ?</h4>
+        <p class="odd">The default branch name in Git is master<br> Git branches are effectively a pointer to a
+            snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you
+            spawn a new branch to encapsulate your changes<br>
+            A branch in Git is simply a lightweight movable pointer to one of these commits <br></p>
+            <h4 class="even">How to checkout to another branch from Master branch?</h4>
+            <p class="even">
+               <b>git checkout -b (branch name) </b> command will create a new branch from the master 
+            </p>
+            <h4 class="odd">How to clone folder in the local from a Github repository?</h4>
+            <p class="odd">
+               <b>git clone (url) </b> will clone a github repository by creating a folder with the same name in the local <br>
+            </p>
+            <h4 class="even">How can i check the repository that my folder is synced to?</h4>
+            <p class="even">
+               <b>git remote -v </b> command show you the repository your folder is synced to 
+            </p>
+            
+
+    </div>
+</body>
+
+</html>
